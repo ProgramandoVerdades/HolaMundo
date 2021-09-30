@@ -3,6 +3,9 @@ package com.acme;
 public class HolaMundo {
 
     public static void main(String[] args) {
-        System.out.println("hola mundo");
+        Mensaje mjs = new Mensaje ();
+        String nombre = mjs.SoliciDatos("Escribe tu Nombre : ");
+        mjs.saludar (nombre);
+
     }
 }
